@@ -14,7 +14,7 @@ function checkAnswer(nextPage, correctAnswers, enableSpecial = false) {
       'July','ジュライ','じゅらい',
       'August','オーガスト','おーがすと',
       'October','オクトーバー','おくとーばー',
-      'Nobember','ノベンバー','ノーベンバー','のべんばー','のーべんばー',
+      'November','ノベンバー','ノーベンバー','のべんばー','のーべんばー',
       'December','ディセンバー','でぃせんばー'
     ];
     if (specialWrongAnswers.includes(userAnswer)) {
