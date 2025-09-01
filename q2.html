@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>ページ1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1 class="title-logo">QUESTION 2</h1>
+  <p>正解だ！なかなかやるね。</p>
+
+  <div class="question-image">
+    <img src="images/question2.png" alt="問題文">
+  </div>
+
+  <input type="text" id="answer">
+
+  <!-- ボタンを横並びに配置 -->
+  <div class="button-group">
+    <button id="hintBtn">ヒントを見る</button>
+    <button onclick="checkAnswer('q3.html',['ばるーん', 'バルーン'],false)">送信</button>
+  </div>
+
+  <p id="message"></p>
+
+  <!-- モーダル部分 -->
+  <div id="hintModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>傾向が読めてきたかな。次は芽にまつわる謎だよ。
+        <br>1行目には、そのまま「スプラウト」と入りそうだ。
+        <br>2行目はよく見るとイコール記号じゃないね。
+        <br>3、4行目の青枠は、よく見ると他の枠と線の数が違うね。そのまま文字を入れる訳ではないようだ。
+      </p>
+    </div>
+  </div>
+</body>
+</html>

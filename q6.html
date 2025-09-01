@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>ページ1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1 class="title-logo">QUESTION 6</h1>
+  <p>これが最後の問題だ。名残惜しいね。</p>
+
+  <div class="question-image">
+    <img src="images/question6.png" alt="問題文">
+  </div>
+
+  <input type="text" id="answer">
+
+  <!-- ボタンを横並びに配置 -->
+  <div class="button-group">
+    <button id="hintBtn">ヒントを見る</button>
+    <button onclick="checkAnswer('ending.html',['エイト', 'えいと', 'eight'],false)">送信</button>
+  </div>
+
+  <p id="message"></p>
+
+  <!-- モーダル部分 -->
+  <div id="hintModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>一見何を入れたらいいやら・・・という感じだけれど、
+        <br>これまでの謎を思い出して、まだ出てきていないものを赤い枠に当てはめてみれば解けるんじゃないかな。
+        <br>赤い枠には6文字、緑と青の枠にはそれぞれ3文字のカタカナが入るよ。
+        <br>最後まで気を抜かないでね？よく見てごらん、緑の矢印があるよ。
+      </p>
+    </div>
+  </div>
+</body>
+</html>

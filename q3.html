@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>ページ1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1 class="title-logo">QUESTION 3</h1>
+  <p>これはちょっと難しいかもしれないね。ヒントも活用してくれたまえ。</p>
+
+  <div class="question-image">
+    <img src="images/question3.png" alt="問題文">
+  </div>
+
+  <input type="text" id="answer">
+
+  <!-- ボタンを横並びに配置 -->
+  <div class="button-group">
+    <button id="hintBtn">ヒントを見る</button>
+    <button onclick="checkAnswer('q4.html',['すずめ', 'スズメ', '雀'],false)">送信</button>
+  </div>
+
+  <p id="message"></p>
+
+  <!-- モーダル部分 -->
+  <div id="hintModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>次はリンゴとバナナにまつわる謎だよ。
+        <br>1行目は、「リンゴ」が「リング」に変化しているね。
+        <br>2行目は、「バナナ」が「ハナ」に変化している。
+        <br>どうやら、矢印を通ることで文字が変化しており、色によって法則がありそうだ。
+        <br>4行目の絵は、「タコ」ではなくて「スミ」を表しているようだよ。
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+

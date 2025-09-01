@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>ページ1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1 class="title-logo">QUESTION 4</h1>
+  <p>よく3問目を正解したね。では、これはどうかな？</p>
+
+  <div class="question-image">
+    <img src="images/question4.png" alt="問題文">
+  </div>
+
+  <input type="text" id="answer">
+
+  <!-- ボタンを横並びに配置 -->
+  <div class="button-group">
+    <button id="hintBtn">ヒントを見る</button>
+    <button onclick="checkAnswer('q5.html',['found', 'ファウンド', 'ふぁうんど'],false)">送信</button>
+  </div>
+
+  <p id="message"></p>
+
+  <!-- モーダル部分 -->
+  <div id="hintModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>もうそろそろ何にまつわるか言わなくてもいいかな？
+        <br>メンバーのイニシャルが謎のようになっていることから、着想を得たよ。
+        <br>3文字目と、5文字目の下半分を180度回転させたものが一致するんだ。
+        <br>黄色のMは、よく見るとただ回転させただけではないようだから、気をつけてね。
+      </p>
+    </div>
+  </div>
+</body>
+</html>
